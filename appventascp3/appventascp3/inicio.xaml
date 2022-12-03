@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appventascp3.inicio" Background="#FDE49C">
+    <ContentPage.Content>
+        <StackLayout Padding="0,90,0,0">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+                <Image Source="icono_appventa.png" WidthRequest="200"></Image>
+                <Label Text="Appventas" FontAttributes="Bold" TextColor="#876445" FontSize="40" HorizontalTextAlignment="Center"></Label>
+                <Label Text="Inicio Appventas" FontAttributes="Bold" TextColor="#CA965C" FontSize="30"></Label>
+                <Button x:Name="registro" Clicked="registro_Clicked"  Text="Crear una cuenta" TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8"   HeightRequest="60" ></Button>
+                <Button  x:Name="iniciarsesion" Clicked="iniciarsesion_Clicked" Text="Iniciar sesión" TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8"   HeightRequest="60" ></Button>
+                <StackLayout>
+                    <Button x:Name="jefe" Clicked="jefe_Clicked" BackgroundColor="#876445" Margin="80" Text="ADMIN"></Button>
+                </StackLayout>
+            </StackLayout>
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
